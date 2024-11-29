@@ -1,0 +1,203 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    max-width: 1440px;
+    align-items: center;
+    gap: 120px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main-nav a:hover {
+    color: #0066cc;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.front {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    align-self: stretch;
+    background: url(../img/front.png);
+    margin-bottom: 80px;
+    height: 744px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.box {
+    
+    width: 700px;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    background: #FFFEF6;
+   position: absolute;
+   top: 122px;
+   right: 50px;
+   bottom: 210px;
+}
+
+.box h2 {
+    color: #C09A45;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.box p {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#btn_more {
+    display: flex;
+    width: 150.142px;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: #C09A45;
+    color: #FFF;
+}
+
+#btn_more:hover {
+    background: #A87C27; /* Darker shade of the original gold-brown */
+    border-color: #8F6722; /* Slightly darker border */
+}
+
+
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin: auto;
+}
+
+.main-top {
+    display: flex;
+    max-width: 1072px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+}
+
+.img {
+    display: flex;             /* Align child figures horizontally */
+    gap: 20px;                 /* Add gap between images */
+    justify-content: center;   /* Optional: centers images horizontally */
+    max-width: 100%;
+}
+
+/* Styling for each figure (image item) */
+.image-item-top {
+    text-align: center;        /* Center the image and caption inside the figure */
+}
+
+/* Optional: make images responsive */
+.image-item-top img {
+    width: 100%;               /* Makes images responsive */
+    height: auto;              /* Maintain aspect ratio */
+}
+
+.topic {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+
+.main-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+footer {
+    background: #B98E2F;
+    color: white;
+    display: flex;
+   width: 100%;
+    padding: 36px 648px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyright {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section h2 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+/* Hover effect for images inside .image-item-top and .image-item-bottom */
+.image-item-top img, .image-item-bottom img {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.image-item-top img:hover, .image-item-bottom img:hover {
+    transform: scale(1.1); /* Scale the image by 10% */
+    opacity: 0.8;          /* Slightly reduce opacity */
+}
